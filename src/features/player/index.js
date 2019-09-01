@@ -1,5 +1,5 @@
 import React from 'react'
-import walkSprint from './playerwalk.png'
+import walkSprint from './playerwalk.jpg'
 import {connect} from 'react-redux'
 import handleMovement from './movement' 
 function Player(props){
@@ -10,9 +10,10 @@ function Player(props){
             top:props.position[1],
             left:props.position[0],
             backgroundImage:`url('${walkSprint}')`,
-            backgroundPosition:'0 0',
-            width:'60px',
-            height:'70px'
+            backgroundPosition:props.spriteLocation,
+            width:'40px',
+            height:'40px',
+            backgroundColor:'green'
         }}>
         </div>
     )

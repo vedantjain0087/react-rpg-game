@@ -1,6 +1,6 @@
 .tile{
     display: inline-flex;
-    background: green;
+    background-color: rgb(66, 104, 66);
 
 }
 
@@ -14,4 +14,8 @@
 
 .tree{
     background-image: url('/tiles/tree.png')
+}
+
+.chest{
+    background-image: url('/tiles/chest.png')
 }

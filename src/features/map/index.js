@@ -6,6 +6,10 @@ function getTileSprite(type){
     switch(type){
         case 0:
             return 'grass'
+        case 3:
+                return 'tree'
+        case 4:
+                return 'chest'
         case 5:
             return 'rock'
         case 6:
@@ -33,7 +37,7 @@ function Map(props){
         style = {{
             width:'800px',
             height: '400px',
-            backgroundColor:'green'
+            backgroundColor:'rgb(66, 104, 66)'
         }}
         >
             {
