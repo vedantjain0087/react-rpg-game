@@ -1,4 +1,5 @@
 import React from 'react'
+import {connect} from 'react-redux'
 import {SPRITE_SIZE} from '../../config/constants'
 import './style.css'
 function getTileSprite(type){
@@ -41,5 +42,9 @@ function Map(props){
         </div>
     )
 }
-
-export default Map
+function mapStateToProps(state){
+    return {
+        tiles: state.map.tiles
+    }
+}
+export default connect(mapStateToProps)(Map)
